@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+        
+        <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+        <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>        
+    </style>     
+</head>
+<body>
+        <div class="header">
+             <!-- Insert code for Sign Up, Sign In button here. 
+               Add code for "ScriBBler" heading and the sub-heading -->
+                <div class="header">
+
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            
+            <!-- Code for scribbler  -->
+            <div class="header-content">
+                <a href="..\index.html"><h1 class="content1">ScriBBler</h1></a>
+                <section class="cotent2">Explore, Imagine, Create</section>
+            </div>
+            
+           
+        </div>
+
+    </div>
+
+
+        <!-- Insert code for Sign In form here -->
+        <div class="header-content-1">
+             <button id="btn1" class="btn-header" onclick="document.getElementById('id02').style.display='block'">Sign In</button> 
+        </div>
+
+        <!-- Sign In Button's form here  -->
+             <!-- Code for Sign Up and Sign In -->
+            <center>
+            <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="#">
+                
+                        <div class="container">
+                                <h1>  Welcome Back!</h1>
+                            
+                                <hr>
+                                <label for="email"><b>Username</b></label> <br>
+                                <input type="text" placeholder="User Name" name="email" required> <br>
+
+                                <label for="psw"><b>Password</b></label> <br>
+                                <input type="password" placeholder="Enter Password" name="psw" required> <br>
+
+                                <button type="submit" class="signupbtn">Sign In</button> 
+
+                                <br><br>  <br><br>  <br><br>
+                                <h2 id="btn-para-1">Not a member? <a  id="btn3" class="btn-header" onclick="document.getElementById('id01').style.display='block'" style="color:blue; cursor:pointer;">Sign Up</a></h2>
+                        </div>
+                </form>
+            </div>
+        </center>
+
+
+    <div>
+
+        <!-- Insert code for Sign Up modal here -->
+        <!--Sign Up button  -->
+        <div class="header-content-1">
+                <button id="btn1" class="btn-header" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+        </div>
+             <!-- Code for Sign Up and Sign In -->
+            <center>
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="#">
+                
+                        <div class="container">
+                            <h1>Get started</h1>
+                        
+                            <hr>
+                            <label for="name"><b>Full Name</b></label>
+                            <input type="text" placeholder="Enter Full name" name="email" required> <br>
+
+                            <label for="email"><b>Username</b></label> <br>
+                            <input type="text" placeholder="User Name" name="email" required> <br>
+
+                            <label for="psw"><b>Password</b></label> <br>
+                            <input type="password" placeholder="Enter Password" name="psw" required> <br>
+
+                            <label for="psw-repeat"><b>Confirm Password</b></label> <br>
+                            <input type="password" placeholder="Confirm Password" name="psw-repeat" required> <br>
+                
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        
+                        </div>
+                 </form>
+            </div>
+            </center>
+
+    </div>
+
+        </div>
+
+   <div class="blogContent">
+
+   <!-- Blog title and Blog's body -->
+<div id="blogTitle" class="blogTite">
+    <h id="blogTitleNew">The legacy of Jimi Handrix</h>
+</div>
+
+<div class="blogAuthor">
+        <button type="button" id="editPostClick" class="editPostButton" onclick="editPost()">Edit <i class="fa fa-edit"></i> </button>
+        <p>Jimi</p>
+</div>
+<div class="blogText">
+    <p id="blogBody">
+             Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.
+             [1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. 
+             His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll.
+             While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues,
+             R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.
+    </p>
+</div>
+
+<!-- Like button  -->
+<div class="likeBlogButton">    
+    <button  id= "likeBlog" onclick="postLiked()">
+      <i class="fa fa-thumbs-up"> Like</i>
+    </button> 
+    <!-- Comment -->
+    <span id="commentCount">Be the first one to like this!</span>
+  </div>
+
+  <div class="commentContainer">      
+    <form class="commentBody"> 
+        <label for="commentContent"></label>
+                <textarea placeholder="Leave a comment..." id="commentContent" rows="5" cols="80" name="Content"></textarea> <br>
+                <button type="button" class="newComment" onClick="addComment()">Comment</button>
+    </form>
+    <p class="allCommentsHeading">All Comments</p> 
+         <div class="allCommentsBox" id= "commentBox"> 
+             <div class="contentOfComment">                                          
+             </div>
+        </div>
+     </div>
+    </div>
+    <script src="..\js\post.js" defer></script>
+    <script src="..\js\header.js">             
+    </script>
+    
+</body>

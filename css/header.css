@@ -1,0 +1,157 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.header-content {
+    float: left;
+	font-family: 'Satisfy', cursive;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-weight: bolder;
+}
+ .content1 {
+    font-size: 50px;
+    float: left;
+  	font-family: 'Satisfy', cursive;
+    color: blue;
+    padding: px;
+    margin-left: px;
+    margin-top: 25px;
+    font-weight: bolder;
+    line-height: 0px; 
+} 
+.content2 {
+    float: left;
+    font-size: 15px;
+    margin-top: -0px;
+    margin-left: 0px;
+    color: antiquewhite;
+    font-family: 'Satisfy', cursive;
+    font-weight: lighter;
+} 
+.header-content-1 {
+    float: right;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+/* Sign In Sign Up buttons  styling */
+#btn1 {
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    color: antiquewhite;
+    border: 2px solid grey;
+    /* border-radius: 12px; */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.7;
+   padding:0px;
+}
+#btn1:hover {
+    opacity: 1.0;
+    padding: 10px;
+    background-color:rgb(84, 160, 247);
+    color: black;
+}
+ input[type=text], input[type=password] {
+   width: 90%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+ }
+ 
+ /* Add a background color when the inputs get focus */
+ input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+ /* Label styling */
+label{
+   float: left;
+} 
+ /* Set a style for all buttons */
+  button {
+   color: white;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   opacity: 0.9;
+   cursor:pointer;
+ } 
+ 
+ button:hover {
+   opacity:1;
+ }
+ 
+ /* Extra styles for the submit button */
+ .signupbtn {
+   padding: 14px 20px;
+   background-color: #4CAF50;
+ }
+ /* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+   float: left;
+   width: 100%;
+   font-size:20px;
+ }
+ 
+ 
+ /* Add padding to container elements */
+ .container {
+   padding: 16px;
+ }
+ 
+ /* The Modal (background) */
+ .modal {
+   display: none; 
+   position: fixed; 
+   z-index: 1;
+   left: 30%;
+   top: 3%;
+   width: 40%; 
+   height: 90%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: #fefefe;
+   padding-top: 10px;
+ }
+ 
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+   width: 90%; /* Could be more or less, depending on screen size */
+   height: 89%;
+ }
+ 
+ /* Style the horizontal ruler */
+ hr {
+   border: 1px solid #5e4b4b;
+   margin-bottom: 25px;
+ }
+  
+ /* The Close Button (x) */
+ .close {
+   position: absolute;
+   right: 35px;
+   top: 15px;
+   font-size: 40px;
+   font-weight: bold;
+   color: #f1f1f1;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #2b2626;
+   cursor: pointer;
+ }
+ 
+ /* Clear floats */
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ 

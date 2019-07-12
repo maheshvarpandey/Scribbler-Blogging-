@@ -1,0 +1,253 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+    /* Style for All Posts buttons */
+.btn-post {
+   height: 60px;
+   width: 110px;
+   background-color: rgb(255, 145, 0);
+   color: antiquewhite;
+   border: 2px solid papayawhip;
+   border-radius: 10px;
+   font-size: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   margin-left: -100px;
+   cursor:pointer;
+}
+
+   /* Style for create Posts buttons */
+.btn-post-1 {
+   height: 60px;
+   width: 110px;
+   background-color: rgb(255, 145, 0);
+   color: antiquewhite;
+   border: 2px solid papayawhip;
+   border-radius: 10px;
+   font-size: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   margin-left: 15px;
+   cursor:pointer;
+}
+   /* Hover effect for All Posts buttons */
+.btn-post:hover {
+   height: 55px;
+   width: 105px;
+   opacity: 1.0;
+   padding: 5px;
+   cursor:pointer;
+} 
+/* Hover Effect for Creates Posts buttons */
+.btn-post-1:hover {
+   height: 55px;
+   width: 105px;
+   opacity: 1.0;
+   padding: 5px;
+   cursor:pointer;
+}
+/* Sign up form
+------------------------------------------------------------------
+*/
+
+/* 90%-width input fields */
+ input[type=text], input[type=password] {
+   width: 90%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+ }
+ 
+ /* Add a background color when the inputs get focus */
+ input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+ /* Label styling */
+label{
+   float: left;
+} 
+ /* Set a style for all buttons */
+  button {
+   color: white;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   opacity: 0.9;
+   cursor:pointer;
+ } 
+ 
+ button:hover {
+   opacity:1;
+ }
+ 
+ /* Extra styles for the submit button */
+ .signupbtn {
+   padding: 14px 20px;
+   background-color: #4CAF50;
+ }
+ /* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+   float: left;
+   width: 100%;
+   font-size:20px;
+ }
+ 
+ 
+ /* Add padding to container elements */
+ .container {
+   padding: 16px;
+ }
+ 
+ /* The Modal (background) */
+ .modal {
+   display: none; 
+   position: fixed; 
+   z-index: 1;
+   left: 30%;
+   top: 3%;
+   width: 40%; 
+   height: 90%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: #fefefe;
+   padding-top: 10px;
+ }
+ 
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+   width: 90%; /* Could be more or less, depending on screen size */
+   height: 89%;
+ }
+ 
+ /* Style the horizontal ruler */
+ hr {
+   border: 1px solid #5e4b4b;
+   margin-bottom: 25px;
+ }
+  
+ /* The Close Button (x) */
+ .close {
+   position: absolute;
+   right: 35px;
+   top: 15px;
+   font-size: 40px;
+   font-weight: bold;
+   color: #f1f1f1;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #2b2626;
+   cursor: pointer;
+ }
+ 
+ /* Clear floats */
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ 
+ /* Create post styling */
+ #newPostTitle {
+                width: 50%;
+                padding: 10px 10px 10px 10px;
+                }
+                #postContent {
+                    width: 100%;
+                    background: #f1f1f1;
+                }
+                .newPostBox {
+                    height: 100%;
+                    width: 100%;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    overflow-y: auto;
+                    transition: 0.5s;
+                    display: none;
+                    background-color: rgba(0,0,0,0.7);
+                }
+                
+                .newPost-Content {
+                    position: relative; 
+                    width: 70%;
+                    margin: 1% auto auto auto; 
+                    text-align: left;
+                    background-color: #fff;
+                    font-family: 'Abel', sans-serif;
+                    font-weight: bold;
+                    background-color: rgba(0,0,0,0.7);
+                    background-color: #fff;
+                }
+                
+                .newPostBox a {
+                    
+                    text-decoration: none;
+                    font-size: 36px;
+                    color: #818181;
+                    display: block;
+                    transition: 0.3s;
+                }
+                
+                .newPostBox a:hover, .overlay a:focus {
+                    color: #f1f1f1;
+                            }
+                
+                .newpost-close-button {
+                    float: right;
+                    font-size: 20px;
+                    margin: 0px 0px 0px 0px;
+                }
+                .close_newPost {
+                    position: absolute;
+                    right: 20px;
+                    /* top: 10px; */
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: #000;
+                }
+                
+                .close_newPost:hover,
+                .close_newPost:focus {
+                    color: #f44336;
+                    cursor: pointer;
+                }
+                 #newPostForm {
+                    padding: 0px 50px 0px 50px;
+                    font-family: 'Abel', sans-serif;
+                    font-size: 18px;
+                }
+                #newPostSubmit {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px 10px 10px 10px;
+                    border: none;
+                    cursor: pointer;
+                    width: 10%;
+                    opacity: 0.9;
+                    margin-left: 46%;
+                   text-align: center;
+                   margin-top: 8px;
+                   font-size: 15px;
+                }
+ 
